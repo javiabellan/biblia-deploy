@@ -6,6 +6,7 @@
 -`htop`
   - Pres `F5` to see a **tree view of processes**.
 -`glances`
+- [`btop`](https://github.com/aristocratos/btop)
 
 https://www.brendangregg.com/linuxperf.html
 

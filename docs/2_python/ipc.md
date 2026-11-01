@@ -1,4 +1,7 @@
 
+https://github.com/osvenskan/posix_ipc/
+https://github.com/osvenskan/sysv_ipc
+https://github.com/seifert/ipcqueue
 
 https://cloudcity.io/blog/2019/02/27/things-i-wish-they-told-me-about-multiprocessing-in-python/
 https://cloudcity.io/blog/2019/05/14/five-python-multiprocessing-tips-pycon-2019-video/

@@ -1,5 +1,7 @@
 # Hardware
 
+[George Hotz | AMD PC Build](https://www.youtube.com/watch?v=IhkXxFJ_qeI)
+
 ```
 Mother board           1*1030€ = 1030€  https://www.pccomponentes.com/asus-pro-ws-wrx80e-sage-se-wifi
 CPU 32 cores           1*3500€ = 3500€

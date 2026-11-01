@@ -190,7 +190,11 @@ WantedBy=app.service # This unit should start when app.service is starting
 
 ## Servicio que se levanta solo, si se cae
 
-dentro de `[Service]` si especificamos `Restart=on-failure` conseguimos esta funcionalidad. Ademas podemos definir `RestartSec=5s` para que se levante a los 5 segundos de haberse caido.
+dentro de `[Service]` si especificamos `Restart=always` ó `Restart=on-failure` conseguimos esta funcionalidad. Ademas podemos definir `RestartSec=5s` para que se levante a los 5 segundos de haberse caido.
+
+> - `Restart=always` means that the container will be restarted even if it exited with a zero exit code (i.e. successfully). This is useful when you don't care why the container exited, you just want to make sure that it is always running (e.g. a web server). This is the default.
+> - `Restart=on-failure` means that the container will only be restarted if it exited with a non-zero exit code (i.e. something went wrong). This is useful when you want accomplish a certain task with the pod, and ensure that it completes successfully - if it doesn't it will be restarted until it does.
+> Source: https://stackoverflow.com/a/40534364
 
 ```bash
 [Unit]

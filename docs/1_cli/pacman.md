@@ -15,8 +15,67 @@ pacman -Qs {pkg}   # Search local repository for package
 pacman -R {pkg}    # Remove package {pkg}
 pacman -Rs {pkg}   # Remove package as well as unneeded dependencies (-s)
 pacman -Rns {pkg}  # Remove package, dependencies (-s), and system config files (-n)
+pacman -Rdd {pkg}  # Remove solo ese package, dejande dependencias padres e hijos huerfanod (orphans)
 ```
 
+
+## Update the system
+
+```bash
+# Update Arch Linux Keyring:
+# The first step is to ensure that your system's keyring is up-to-date.
+# The keyring contains the public keys used for verifying packages.
+# Run the following command:
+sudo pacman -Sy archlinux-keyring
+
+# After updating the keyring, try running the system update again:
+sudo pacman -Syu
+```
+
+
+
+## Change mirrorlist (source servers)
+
+Conseguir los mirrors mas rapidos con `reflector`
+
+1. Install `reflector`:
+
+```bash
+sudo pacman -S reflector
+```
+
+2. Create a backup of your current mirrorlist:
+
+```bash
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+```
+
+3. Run `reflector` to generate a new mirrorlist. The following example sorts the mirrors by download speed and updates the mirrorlist with the top 5 fastest mirrors:
+
+```bash
+sudo reflector --country es --latest 5 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+```
+
+4. After generating the new mirrorlist, you can update your package databases:
+
+```bash
+sudo pacman -Syy
+```
+
+
+
+## Change repositorises
+
+
+```bash
+sudo nano /etc/pacman.conf
+```
+
+No activar los reposirotrios de testing que dan problemas. Ejemplo de problema:
+- linux-lts: esta solo en `core`
+- nvidia-lts: está en `extra` y `extra-testing`
+
+si esta extra-testing activado, el driver de envidia no funciona
 
 
 

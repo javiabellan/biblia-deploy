@@ -75,6 +75,10 @@ Enable service with: `sudo systemctl enable tmux.service`
 
 ## Learn more
 
+- [You need to learn tmux RIGHT NOW!](https://www.youtube.com/watch?v=nTqu6w2wc68)
+- [Tmux has forever changed the way I write code](https://www.youtube.com/watch?v=DzNmUNvnB04)
 - Video de s4vitar: [Aprendiendo a usar tmux desde 0](https://www.youtube.com/watch?v=1dDahc214co)
 - [Practical Tmux](https://mutelight.org/practical-tmux)
 - https://hackernoon.com/using-tmux-to-improve-your-terminal-experience-jt4932zv
+- https://protechnotes.com/comprehensive-tmux-tutorial-for-beginners-with-a-cheat-sheet/
+- An alternative to TMUX: [zellij](https://zellij.dev/)

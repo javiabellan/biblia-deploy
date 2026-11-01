@@ -7,6 +7,15 @@
 jupyter notebook --no-browser
 ```
 
+
+## Widgets
+
+
+sudo pacman -S python-ipywidgets
+sudo pacman -S jupyterlab-widgets
+sudo pacman -S python-ipympl
+
+
 ## [Jupyter extensions](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html)
 
 1. `sudo pip install jupyter_contrib_nbextensions`

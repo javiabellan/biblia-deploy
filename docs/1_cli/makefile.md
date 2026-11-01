@@ -19,3 +19,9 @@ plot-%.png: %.dat plot.py
 ## Run it with `make`
 
 If the DepencyFiles has not changed, the commands for TargetFile will not be executed.
+
+
+
+## Multithread
+
+Run `make`. If the build seems slow, try `make -j4` to use 4 threads.

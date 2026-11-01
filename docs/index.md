@@ -24,9 +24,11 @@
 
 
 ### Youtube
-- [CodeAesthetic](https://www.youtube.com/@CodeAesthetic)
-- [fasterthanlime](https://www.youtube.com/@fasterthanlime)
-- [pamarcos](https://www.youtube.com/@Nietmetal)
+- [CodeAesthetic](https://www.youtube.com/@CodeAesthetic) El minimalista
+- [fasterthanlime](https://www.youtube.com/@fasterthanlime) El joven frances
+- [ThePrimeTime](https://www.youtube.com/@ThePrimeTimeagen) El extrovertido con bigote
+- [strager](https://www.youtube.com/@strager_) El ermitaño de camisetas guays
+- [pamarcos](https://www.youtube.com/@Nietmetal) El de la vega baja
 
 ### Jan Schaumann
 - [Twitter](https://twitter.com/jschauma)

@@ -1,3 +1,5 @@
+- https://notes.shichao.io/asm
+
 # Diagram
 
 ```
