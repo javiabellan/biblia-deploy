@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Color terminal - Documentación de Javi</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Color terminal";
+        var mkdocs_page_input_path = "1_cli/bash_scripting/color_terminal.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Documentación de Javi
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/1_dirs.md">📁 Dirs (cd,ls,find,ranger)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/2_files.md">📄 Files (cat,file,stat)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/3_process.md">⏳ Process (ps,top)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/compression.md">🗜️ Compress (zip,tar,bz)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/cryptography.md">🔑 Cryptography (base64)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/plotting.md">📊 Plotting (gnuplot)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/scripting.md">👨‍💻 Scripting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/customization.md">🎨 Customization (dotfiles)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/git.md">GIT</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/editors.md">📝 Editors (nano,vim,jupyter)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/pacman.md">📦 Software (pacman,aur,pip)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/ssh.md">SSH</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools/tmux.md">TMUX</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI data tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_data/free_text.md">⚪️ Free text (regex,grep,tr,sed)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_data/csv.md">🟢 Excel,csv,tsv (cut,paste,awk)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_data/html.md">🟡 HTML (pup) XML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_data/json.md">🟠 JSON (jq)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_data/pdf.md">🔴 PDF (Xpdf,poppler)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_data/image.md">🔵 Image (ImageMagick)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_data/sound_video.md">🟣 Sound,Video (ffmepg,sox)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI networking tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_net/web_scraping.md">⬇️ Web Scraping (curl,wget)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_net/pentesting.md">🗡️ Pentesting (nmap)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_net/deffensive.md">🛡️ Deffensive</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_net/dns.md">📒 DNS (dig,nslookup,whois)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_net/vpn.md">🔒 VPN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../cli_tools_net/firewall.md">📛 Firewall</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Python</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../../python/numpy.md">🟦 Numpy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../python/machine_learning.md">🟫 Sklearn</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../python/pytorch.md">🟥 Pytorch</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../python/tensorflow.md">🟧 Tensorflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../python/onnx.md">⬜️ ONNX</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../python/tensorrt.md">🟩 TensorRT</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../python/numpy.md">🟦 Parallel</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">C++</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../../programming/ruby.md">♦️ Ruby</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../programming/monitoring.md">Monitoring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../programming/profiling.md">Profiling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../programming/debugging.md">Debugging</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../../programming/makefile.md">Makefile</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Documentación de Javi</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Color terminal</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>http://jafrog.com/2013/11/23/colors-in-terminal.html
+https://en.wikipedia.org/wiki/ANSI_escape_code#SGR</p>
+<h2 id="esc-character"><code>ESC</code> character</h2>
+<p>|                   python
+|-----------|------|-------------
+| Character | \e   |   -
+| ASCII Oct | 33   | "\033"
+| ASSII Dec | 23   |   - 
+| ASCII Hex | 1B   | "\x1B"
+| Unicode   | 001B | "\u001b"</p>
+<p>Shell   \e
+ASCII Hex   \0x1B
+ASCII Oct   \033</p>
+<pre><code class="language-python">for esc in [&quot;\\e&quot;, &quot;\23&quot;, &quot;\o33&quot;, &quot;\033&quot;, &quot;\x1B&quot;, &quot;\u001b&quot;]:
+    GREEN = esc + &quot;[92m&quot;
+    RED   = esc + &quot;[91m&quot;
+    ENDC  = esc + '[0m'
+    print(GREEN + &quot; hello &quot; + RED + &quot;world&quot; + ENDC)
+</code></pre>
+<p>Basic 8 colors  30..37</p>
+<p>Basic "high contrast" colors    90..97</p>
+<p>DARK_BLUE = '\033[94m'
+PURPLE = '\033[95m'
+OKCYAN = '\033[96m'
+OKGREEN = # '\033[92m' # "\033[1;32m"
+WARNING = '\033[93m'
+FAIL = '\033[91m'</p>
+<p>\ooo    Octal value 
+\xhh    Hex value</p>
+<p>ENDC = '\033[0m'
+BOLD = '\033[1m'
+UNDERLINE = '\033[4m'</p>
+<p>Bold: \u001b[1m
+Underline: \u001b[4m
+Reversed: \u001b[7m</p>
+<p>Black: \u001b[30m
+Red: \u001b[31m
+Green: \u001b[32m
+Yellow: \u001b[33m
+Blue: \u001b[34m
+Magenta: \u001b[35m
+Cyan: \u001b[36m
+White: \u001b[37m
+Reset: \u001b[0m</p>
+<p>Bright Black: \u001b[30;1m
+Bright Red: \u001b[31;1m
+Bright Green: \u001b[32;1m
+Bright Yellow: \u001b[33;1m
+Bright Blue: \u001b[34;1m
+Bright Magenta: \u001b[35;1m
+Bright Cyan: \u001b[36;1m
+Bright White: \u001b[37;1m
+Reset: \u001b[0m</p>
+<p>Background Bright Black: \u001b[40;1m
+Background Bright Red: \u001b[41;1m
+Background Bright Green: \u001b[42;1m
+Background Bright Yellow: \u001b[43;1m
+Background Bright Blue: \u001b[44;1m
+Background Bright Magenta: \u001b[45;1m
+Background Bright Cyan: \u001b[46;1m
+Background Bright White: \u001b[47;1m</p>
+<p>ENDCOLOR = '\033[0m'
+RED    = '\033[91m'
+GREEN  = '\033[92m'
+YELLOW = '\033[93m'
+print(GREEN + "● OK\t" + ENDC + "This text is Bright Green\n" )
+print(YELLOW + "● WARNING\t" + ENDC + "This text is Bright Green\n" )
+print(RED + "● ERROR\t" + ENDC + "This text is Bright Green\n" )</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

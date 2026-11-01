@@ -1,0 +1,41 @@
+
+<!-- https://dev.to/0shuvo0/event-bubbling-capturing-and-how-to-prevent-them-9n5
+
+true  -> capturing mode   -> 1st parent, then child
+false -> of bubbling mode -> 1st child, then parent
+
+https://www.neoguias.com/diferencia-event-stoppropagation-event-preventdefault/
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+
+  <div id="parent">
+    <div id="child">click me</div>
+  </div>
+
+  <script type="text/javascript">
+    document.addEventListener("click", function() {
+      console.log("document clicked");
+    }, true);
+
+    document.getElementById("parent").addEventListener("click", function() {
+      console.log("parent clicked");
+    }, false);
+
+    document.getElementById("child").addEventListener("click", function(event) {
+      console.log("child clicked");
+      event.stopPropagation();
+    }, false);
+
+  </script>
+</body>
+
+</html>

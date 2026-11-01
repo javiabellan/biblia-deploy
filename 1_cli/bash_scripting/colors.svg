@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="center-block" width="350px" height="200px">
+  <rect fill="white" stroke-width="2"></rect>
+  <text font-family="Verdana" font-size="14" y="40">
+    <tspan fill="#4ECDC4" dx="75">Part of the CSI</tspan>
+    <tspan fill="#FF6B6B" dx="40">Finishing symbol</tspan>
+  </text>
+  <polyline stroke="#4ECDC4" fill="none" stroke-width="3" points="105,60 105,50 135,50 135,60"></polyline>
+  <polyline stroke="#FF6B6B" fill="none" stroke-width="3" points="245,60 245,50 290,50 290,60"></polyline>
+  <text font-family="Verdana" font-size="45" y="100">
+    <tspan fill="#556270">\x1b</tspan>
+    <tspan fill="#4ECDC4" dx="-10">[</tspan>
+    <tspan fill="#C7F464" dx="-10">31;4</tspan>
+    <tspan fill="#FF6B6B" dx="-10">m</tspan>
+  </text>
+  <polyline stroke="#556270" fill="none" stroke-width="3" points="2,110 2,120 105,120 105,110"></polyline>
+  <polyline stroke="#C7F464" fill="none" stroke-width="3" points="135,110 135,120 245,120 245,110"></polyline>
+  <text font-family="Verdana" font-size="14" y="140">
+    <tspan fill="#556270" dx="5">ESC character</tspan>
+    <tspan fill="#556270" dx="-100" dy="20">in Hex ASCII</tspan>
+    <tspan fill="#C7F464" dx="45" dy="-20">Color codes</tspan>
+  </text>
+</svg>

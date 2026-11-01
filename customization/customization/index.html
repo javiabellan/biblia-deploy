@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>🎨 Customization (dotfiles) - Documentación de Javi</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\ud83c\udfa8 Customization (dotfiles)";
+        var mkdocs_page_input_path = "customization/customization.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Documentación de Javi
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/1_dirs.md">📁 Dirs (cd,ls,find,ranger)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/2_files.md">📄 Files (cat,file,stat)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/3_process.md">⏳ Process (ps,top)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/compression.md">🗜️ Compress (zip,tar,bz)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/cryptography.md">🔑 Cryptography (base64)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/plotting.md">📊 Plotting (gnuplot)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/scripting.md">👨‍💻 Scripting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/customization.md">🎨 Customization (dotfiles)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/git.md">GIT</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/editors.md">📝 Editors (nano,vim,jupyter)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/pacman.md">📦 Software (pacman,aur,pip)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/ssh.md">SSH</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/tmux.md">TMUX</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI data tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/free_text.md">⚪️ Free text (regex,grep,tr,sed)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/csv.md">🟢 Excel,csv,tsv (cut,paste,awk)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/html.md">🟡 HTML (pup) XML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/json.md">🟠 JSON (jq)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/pdf.md">🔴 PDF (Xpdf,poppler)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/image.md">🔵 Image (ImageMagick)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/sound_video.md">🟣 Sound,Video (ffmepg,sox)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI networking tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/web_scraping.md">⬇️ Web Scraping (curl,wget)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/pentesting.md">🗡️ Pentesting (nmap)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/deffensive.md">🛡️ Deffensive</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/dns.md">📒 DNS (dig,nslookup,whois)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/vpn.md">🔒 VPN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/firewall.md">📛 Firewall</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Python</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../python/numpy.md">🟦 Numpy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/machine_learning.md">🟫 Sklearn</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/pytorch.md">🟥 Pytorch</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/tensorflow.md">🟧 Tensorflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/onnx.md">⬜️ ONNX</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/tensorrt.md">🟩 TensorRT</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/numpy.md">🟦 Parallel</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">C++</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../programming/ruby.md">♦️ Ruby</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/monitoring.md">Monitoring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/profiling.md">Profiling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/debugging.md">Debugging</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/makefile.md">Makefile</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Documentación de Javi</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">🎨 Customization (dotfiles)</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="customization-dotfiles">🎨 Customization (dotfiles)</h1>
+<ul>
+<li>bash: <code>~/.bashrc</code>, <code>~/.bash_profile</code></li>
+<li>zsh <code>~/.zshrc</code></li>
+<li>git: <code>~/.gitconfig</code></li>
+<li>vim: <code>~/.vimrc</code> and the <code>~/.vim</code> folder</li>
+<li>ssh: <code>~/.ssh/config</code></li>
+<li>tmux: <code>~/.tmux.conf</code></li>
+<li>nano: <code>~/.nanorc</code></li>
+</ul>
+<h2 id="zsh-zshrc">ZSH <code>~/.zshrc</code></h2>
+<p>Change to zsh: <code>sudo chsh -s /usr/bin/zsh javi</code>
+curl -L http://install.ohmyz.sh | sh</p>
+<h3 id="change-bash-to-zsh">Change Bash to ZSH</h3>
+<pre><code class="language-bash">$ sudo pacman -S zsh                # Install ZSH (and extras)
+$ zsh                               # Make sure that ZSH has been installed correctly
+$ chsh -l                           # List all installed shells
+$ chsh -s /usr/bin/zsh              # WAY 1) Set new default shell (zsh) for your user
+$ usermod --shell /usr/bin/zsh javi # WAY 2) Set new default shell (zsh) for a user (S4vitar lo hizo asi)
+$ nano /etc/passwd                  # WAY 3) Set new default shell (zsh) for a user
+$ echo $SHELL                       # Comprobar la nueva shell
+</code></pre>
+<blockquote>
+<ul>
+<li>https://wiki.archlinux.org/title/zsh#Installation</li>
+<li>https://wiki.archlinux.org/title/Command-line_shell#Changing_your_default_shell</li>
+<li><a href="https://www.tecmint.com/change-a-users-default-shell-in-linux/">3 Ways to Change a Users Default Shell</a></li>
+</ul>
+</blockquote>
+<h3 id="better-prompt-zsh-theme-powerlevel10k">Better prompt -&gt; <code>zsh-theme-powerlevel10k</code></h3>
+<pre><code class="language-bash">$ sudo pacman -S zsh-theme-powerlevel10k
+$ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' &gt;&gt; ~/.zshrc
+$ source ~/.zshrc
+$ p10k configure
+</code></pre>
+<ul>
+<li>https://github.com/ahillio/powerlevel10k/blob/master/README.md#arch-linux</li>
+</ul>
+<h3 id="colors-on-terminal-outout">Colors on terminal outout</h3>
+<pre><code class="language-bash">alias ls='ls --color=auto'
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+alias ip='ip -color=auto'
+</code></pre>
+<p>Pacman has a color option. Uncomment the <code>Color</code> line in <code>/etc/pacman.conf</code>.</p>
+<p>https://wiki.archlinux.org/title/Color_output_in_console</p>
+<p>Other way is to install <code>grml-zsh-config</code></p>
+<h3 id="colors-on-terminal-commands-zsh-syntax-highlighting">Colors on terminal commands -&gt; <code>zsh-syntax-highlighting</code></h3>
+<pre><code class="language-bash">$ sudo pacman -S zsh-syntax-highlighting
+$ echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' &gt;&gt; ~/.zshrc
+</code></pre>
+<h3 id="sugerir-comandos-del-pasado-zsh-autosuggestions">Sugerir comandos del pasado -&gt; <code>zsh-autosuggestions</code></h3>
+<pre><code class="language-bash">$ sudo pacman -S zsh-autosuggestions
+$ echo 'source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh' &gt;&gt; ~/.zshrc
+</code></pre>
+<h3 id="zsh-other-plugins">ZSH: Other plugins</h3>
+<ul>
+<li>zsh-completions</li>
+<li>zsh-sudo   -&gt; con esc esc  te pone sudo al principio (source /usr/share/zsh-sudo/sudo.plugin.zsh
+)</li>
+<li>zsh-suggestions</li>
+<li>fzf -&gt; con ctrl + T busca</li>
+</ul>
+<pre><code class="language-bash"># ZSH pluggins
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+
+# General
+alias l='lsd'
+alias ls='lsd'
+alias ll='lsd -l'
+alias la='lsd -a'
+alias lla='lsd -la'
+alias tree='lsd --tree'
+
+# Jupyter notebook
+alias jn=&quot;jupyter notebook&quot;
+
+# Pacman
+alias i=&quot;sudo pacman -S&quot;        # install a package
+alias s=&quot;pacman -Ss&quot;            # search for a package
+alias u=&quot;sudo pacman -Syu&quot;      # update the packages
+alias r=&quot;sudo pacman -Rns&quot;      # remove a package
+
+alias install=&quot;sudo pacman -S&quot;  # install a package
+alias search=&quot;pacman -Ss&quot;       # search for a package
+alias update=&quot;sudo pacman -Syu&quot; # update the packages
+alias remove=&quot;sudo pacman -Rns&quot; # remove a package
+
+# Others
+alias title=&quot;figlet&quot;
+
+# Git
+function commit() {
+    git add .
+    msg=$@ # Every argument
+    git commit -m &quot;$msg&quot;
+    git push
+}
+
+# Open vim in &quot;insert mode&quot;
+alias vim=&quot;vim -c 'startinsert'&quot;
+</code></pre>
+<h2 id="nano-nanorc">Nano: <code>~/.nanorc</code></h2>
+<pre><code class="language-bash">set mouse
+set autoindent  # Tthe newly created line will contain the same indent as the preceding line
+set tabsize 4   # Use a tab size of number columns. The default value is 8.
+set softwrap    # Enable soft line wrapping for easier viewing of very long lines
+set nowrap      # Don’t hard-wrap text at all
+# set nohelp    # Don’t display the two help lines at the bottom of the screen.
+set linenumbers # Display of line numbers in front of the text.
+
+include &quot;/usr/share/nano/*.nanorc&quot; # Default Syntax highlighting
+include &quot;/usr/share/nano-syntax-highlighting/*.nanorc&quot; #  syntax highlighting enhancements*
+</code></pre>
+<blockquote>
+<p>sudo pacman -S nano-syntax-highlighting</p>
+</blockquote>
+<h2 id="tmux-tmuxconf">TMUX <code>~/.tmux.conf</code></h2>
+<pre><code class="language-bash">####### SAME PROMT
+set -g default-terminal &quot;screen-256color&quot;
+if 'infocmp -x tmux-256color &gt; /dev/null 2&gt;&amp;1' 'set -g default-terminal &quot;tmux-256color&quot;'
+
+####### MOUSE (enable scroll, resize and clicks)
+set -g mouse on                 # For tmux version 2.1 and above
+# set -g mouse-resize-pane on   # Deprecated on version 2.1
+# set -g mouse-select-pane on   # Deprecated on version 2.1
+# set -g mouse-select-window on # Deprecated on version 2.1
+# set -g mode-mouse on          # Deprecated on version 2.1
+# set -g terminal-overrides 'xterm*:smcup@:rmcup@' # Sane scrolling (instead of mimic arrrow keys)
+
+####### Number windows and panes start at 1 instead of 0
+set -g base-index 1
+set -g pane-base-index 1
+</code></pre>
+<ul>
+<li><a href="https://github.com/gpakosz/.tmux">Oh my tmux!</a>: Self-contained, pretty &amp; versatile tmux configuration</li>
+<li><a href="https://mutelight.org/practical-tmux">Practical Tmux</a></li>
+</ul>
+<h2 id="vim">VIM:</h2>
+<pre><code class="language-bash">touch ~/.vimrc
+mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
+curl https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim -o ~/.vim/colors/molokai.vim
+</code></pre>
+<pre><code>~
+├─.vimrc
+└─.vim/
+    ├─ autoload/
+    ├─ backup/
+    ├─ plugged/
+    ├─ syntax/
+       └─ python.vim
+    └─ colors/
+       └─ molokai.vim
+</code></pre>
+<h3 id="vimrc"><code>~/.vimrc</code></h3>
+<pre><code class="language-vim">set nocompatible             &quot; Disable compatibility with vi
+set shortmess+=I             &quot; Disable the default Vim startup message.
+
+set mouse+=a                 &quot; Enable mouse support.
+
+syntax on                    &quot; Turn on syntax highlighting.
+colorscheme molokai          &quot; SublimeText syntax color. (~/.vim/colors/molokai.vim)
+                             &quot; Other colors in /usr/share/vim/vim*/colors/
+
+set cursorline               &quot; Highlight cursor line underneath the cursor horizontally.
+&quot;set cursorcolumn            &quot; Highlight cursor line underneath the cursor vertically.
+
+filetype on                  &quot; Enable type file detection.
+filetype plugin on           &quot; Enable plugins and load plugin for the detected file type.
+filetype indent on           &quot; Load an indent file for the detected file type.
+
+set number                   &quot; Show line numbers.
+&quot;set relativenumber          &quot; This enables relative line numbering mode.
+
+set shiftwidth=4             &quot; Set shift width to 4 spaces.
+set tabstop=4                &quot; Set tab width to 4 columns.
+&quot;set expandtab               &quot; Use space characters instead of tabs.
+
+set nobackup                 &quot; Do not save backup files.
+set scrolloff=10             &quot; Do not let cursor scroll below or above N number of lines when scrolling.
+set nowrap                   &quot; Do not wrap lines. Allow long lines to extend as far as the line goes.
+set incsearch                &quot; Enable searching as you type, rather than waiting till you press enter.
+
+set ignorecase               &quot; Ignore capital letters during search.
+set smartcase                &quot; Override the ignorecase option if searching for capital letters.
+
+set showcmd                  &quot; Show partial command you type in the last line of the screen.
+set showmode                 &quot; Show the mode you are on the last line.
+set showmatch                &quot; Show matching words during a search.
+
+set hlsearch                 &quot; Use highlighting when doing a search.
+set history=1000             &quot; Set the commands to save in history default number is 20.
+
+
+set backspace=indent,eol,start  &quot; makes backspace behave more reasonably
+
+&quot; https://superuser.com/questions/35389/in-vim-how-do-i-make-the-left-and-right-arrow-keys-change-line
+set whichwrap+=&lt;,&gt;,[,]       &quot; makes left and right arrow keys change line
+
+
+&quot; By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
+&quot; shown in any window) that has unsaved changes. This is to prevent you from &quot;
+&quot; forgetting about unsaved changes and then quitting e.g. via `:qa!`. We find
+&quot; hidden buffers helpful enough to disable this protection. See `:help hidden`
+&quot; for more information on this.
+set hidden
+
+
+&quot; Unbind some useless/annoying default key bindings.
+nmap Q &lt;Nop&gt; &quot; 'Q' in normal mode enters Ex mode. You almost never want this.
+
+&quot; Disable audible bell because it's annoying.
+set noerrorbells visualbell t_vb=
+
+
+
+&quot; Use a line cursor within insert mode and a block cursor everywhere else.
+&quot;
+&quot; Using iTerm2? Go-to preferences / profile / colors and disable the smart bar
+&quot; cursor color. Then pick a cursor and highlight color that matches your theme.
+&quot; That will ensure your cursor is always visible within insert mode.
+&quot;
+&quot; Reference chart of values:
+&quot;   Ps = 0  -&gt; blinking block.
+&quot;   Ps = 1  -&gt; blinking block (default).
+&quot;   Ps = 2  -&gt; steady block.
+&quot;   Ps = 3  -&gt; blinking underline.
+&quot;   Ps = 4  -&gt; steady underline.
+&quot;   Ps = 5  -&gt; blinking bar (xterm).
+&quot;   Ps = 6  -&gt; steady bar (xterm).
+let &amp;t_SI = &quot;\e[6 q&quot;
+let &amp;t_EI = &quot;\e[2 q&quot;
+
+
+
+highlight VertSplit    guibg=#181818   guifg=#996228
+highlight SLBackground guibg=#181818   guifg=#996228
+highlight SLFileType   guibg=indianred guifg=#663333
+highlight SLBufNumber  guibg=SeaGreen  guifg=#003333
+highlight SLLineNumber guibg=#80a0ff   guifg=#003366
+
+
+
+&quot;------------------- TAB LINE (TOP BAR) -------------------
+&quot; set showtabline=0 &quot; Hide
+&quot; set showtabline=1 &quot; Show
+set showtabline=2   &quot; Always show
+
+&quot; :hi TabLineSel  ctermfg=Red        ctermbg=Yellow     &quot; Selected tab
+&quot; :hi TabLine     ctermfg=Blue       ctermbg=Yellow     &quot; Non selected tab
+&quot; :hi TabLineFill ctermfg=LightGreen ctermbg=DarkGreen  &quot; Empty space
+
+:hi TabLineSel  ctermbg=#111111    ctermfg=#CCCCCC  &quot; Selected tab
+:hi TabLine     ctermbg=#333333    ctermfg=#CCCCCC  &quot; Non selected tab
+:hi TabLineFill ctermbg=LightGreen ctermfg=#CCCCCC  &quot; Empty space
+
+&quot;----------------------------------------------------------------
+
+
+&quot;------------------- STATUS LINE (BOTTOM BAR) -------------------
+&quot; %F – Display the full path of the current file.
+&quot; %M – Modified flag [+] shows if file is unsaved.
+&quot; %y – Programming language lowercase (eg python)
+&quot; %Y – Programming language uppercase (eg PYTHON)
+&quot; %R – Displays the read-only flag.
+&quot; %b – Shows the ASCII/Unicode character under cursor.
+&quot; 0x%B – Shows the hexadecimal character under cursor.
+&quot; %l – Line number.
+&quot; %c – Column number.
+&quot; %p%% – Show the cursor percentage from the top of the file.
+&quot; %n - Window number ???
+&quot; %{&amp;fileencoding?&amp;fileencoding:&amp;encoding}   -&gt; utf-8
+&quot; %{&amp;fileformat}                             -&gt; unix
+&quot; \[   -&gt; &quot;[&quot; character
+&quot; \    -&gt; space character
+
+
+function! GitBranch()
+  return system(&quot;git rev-parse --abbrev-ref HEAD 2&gt;/dev/null | tr -d '\n'&quot;)
+endfunction
+
+function! StatuslineGit()
+  let l:branchname = GitBranch()
+  return strlen(l:branchname) &gt; 0?'  '.l:branchname.' ':''
+endfunction
+
+function! FileEnc()
+  return &amp;fileencoding ? &amp;fileencoding : &amp;encoding
+endfunction
+
+
+set laststatus=2                      &quot; Show the status on the second to last line.
+
+&quot; LEFT PART
+set statusline=                       &quot; Clear
+set statusline+=\ Line:\ %l\ Col:\ %c &quot; Line and column
+&quot;set statusline+=\ %l:%c              &quot; Line and column (compacted)
+set statusline+=%#PmenuSel#           &quot; Color for git status
+set statusline+=%{StatuslineGit()}    &quot; git status&quot;
+set statusline+=%#LineNr#             &quot; Color for filename
+set statusline+=\ %f                  &quot; filename
+set statusline+=%m\                   &quot; Modified file flag [+]
+
+set statusline+=%=                    &quot; Left-right separator
+
+&quot; RIGHT PART
+&quot;set statusline+=\ %{FileEnc()}
+&quot;set statusline+=\[%{&amp;fileformat}\]
+&quot;set statusline+=\ %p%%
+set statusline+=%#CursorColumn#
+set statusline+=\ %Y\                  &quot; Programming language (lowercase)
+&quot;----------------------------------------------------------------
+</code></pre>
+<p>https://shapeshed.com/vim-statuslines/
+https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/</p>
+<h2 id="neovim-vimrc">NeoVIM: <code>~/.vimrc</code></h2>
+<pre><code class="language-bash">sudo pacman -S neovim
+</code></pre>
+<h1 id="set-ntp-time">Set NTP time</h1>
+<pre><code class="language-bash">sudo pacman -S ntp
+sudo timedatectl set-ntp true
+</code></pre>
+<h1 id="comunity-configsdotfiles">Comunity configs/dotfiles</h1>
+<ul>
+<li><a href="https://github.com/ThePrimeagen/.dotfiles">ThePrimeagen</a></li>
+<li>Savitar</li>
+<li>https://www.youtube.com/watch?v=fshLf6u8B-w&amp;t=3276s</li>
+<li>https://s4vitar.github.io/bspwm-configuration-files/#</li>
+<li>Josean Martinez</li>
+<li>
+<p>Terminal https://www.youtube.com/watch?v=CF1tMjvHDRA</p>
+</li>
+<li>
+<p>https://github.com/rxyhn/dotfiles</p>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

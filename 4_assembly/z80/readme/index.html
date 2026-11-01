@@ -8,7 +8,7 @@
     <title>Diagram - Documentación de Javi</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
@@ -17,12 +17,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -34,7 +33,7 @@
           <a href="../../.." class="icon icon-home"> Documentación de Javi
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -148,8 +147,8 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>Diagram</li>
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Diagram</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -197,62 +196,62 @@
 <table>
 <thead>
 <tr>
-<th align="left">Opcode</th>
-<th align="left">Instruction</th>
-<th align="left">Description</th>
-<th align="center">Bytes</th>
-<th align="center">Cycles</th>
-<th align="left">Notes</th>
+<th style="text-align: left;">Opcode</th>
+<th style="text-align: left;">Instruction</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: center;">Bytes</th>
+<th style="text-align: center;">Cycles</th>
+<th style="text-align: left;">Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">3E __</td>
-<td align="left">LD A, n</td>
-<td align="left">A = 8BITS_VALUE</td>
-<td align="center">2</td>
-<td align="center"></td>
-<td align="left"></td>
+<td style="text-align: left;">3E __</td>
+<td style="text-align: left;">LD A, n</td>
+<td style="text-align: left;">A = 8BITS_VALUE</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td align="left">06 __</td>
-<td align="left">LD B, n</td>
-<td align="left">B = 8BITS_VALUE</td>
-<td align="center">2</td>
-<td align="center"></td>
-<td align="left"></td>
+<td style="text-align: left;">06 __</td>
+<td style="text-align: left;">LD B, n</td>
+<td style="text-align: left;">B = 8BITS_VALUE</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td align="left">26 __</td>
-<td align="left">LD H, n</td>
-<td align="left">H = 8BITS_VALUE</td>
-<td align="center">2</td>
-<td align="center"></td>
-<td align="left"></td>
+<td style="text-align: left;">26 __</td>
+<td style="text-align: left;">LD H, n</td>
+<td style="text-align: left;">H = 8BITS_VALUE</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td align="left">21 <strong> </strong></td>
-<td align="left">LD LH, nn</td>
-<td align="left">LH = 16BITS_VALUE</td>
-<td align="center">3</td>
-<td align="center"></td>
-<td align="left"></td>
+<td style="text-align: left;">21 __ __</td>
+<td style="text-align: left;">LD LH, nn</td>
+<td style="text-align: left;">LH = 16BITS_VALUE</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td align="left">3A <strong> </strong></td>
-<td align="left">LD A, (ADR)</td>
-<td align="left">A = *ADR</td>
-<td align="center">3</td>
-<td align="center"></td>
-<td align="left"></td>
+<td style="text-align: left;">3A __ __</td>
+<td style="text-align: left;">LD A, (ADR)</td>
+<td style="text-align: left;">A = *ADR</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-<td align="left">EB</td>
-<td align="left">EX DE,HL</td>
-<td align="left">DE = HL; HL = DE</td>
-<td align="center">1</td>
-<td align="center"></td>
-<td align="left"><strong>Ex</strong>change DE and HL values.</td>
+<td style="text-align: left;">EB</td>
+<td style="text-align: left;">EX DE,HL</td>
+<td style="text-align: left;">DE = HL; HL = DE</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"><strong>Ex</strong>change DE and HL values.</td>
 </tr>
 </tbody>
 </table>
@@ -260,61 +259,61 @@
 <table>
 <thead>
 <tr>
-<th align="left">Opcode</th>
-<th align="left">Instruction</th>
+<th style="text-align: left;">Opcode</th>
+<th style="text-align: left;">Instruction</th>
 <th>Description</th>
-<th align="center">Bytes</th>
-<th align="center">Cycles</th>
+<th style="text-align: center;">Bytes</th>
+<th style="text-align: center;">Cycles</th>
 <th>Modifies Flags</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">3C</td>
-<td align="left">INC A</td>
+<td style="text-align: left;">3C</td>
+<td style="text-align: left;">INC A</td>
 <td>A = A + 1</td>
-<td align="center">1</td>
-<td align="center"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
 <td></td>
 </tr>
 <tr>
-<td align="left">3D</td>
-<td align="left">DEC A</td>
+<td style="text-align: left;">3D</td>
+<td style="text-align: left;">DEC A</td>
 <td>A = A - 1</td>
-<td align="center">1</td>
-<td align="center"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
 <td></td>
 </tr>
 <tr>
-<td align="left">23</td>
-<td align="left">INC HL</td>
+<td style="text-align: left;">23</td>
+<td style="text-align: left;">INC HL</td>
 <td>HL = HL + 1</td>
-<td align="center">1</td>
-<td align="center"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
 <td></td>
 </tr>
 <tr>
-<td align="left">D6 __</td>
-<td align="left">SUB n</td>
+<td style="text-align: left;">D6 __</td>
+<td style="text-align: left;">SUB n</td>
 <td>A = A - n</td>
-<td align="center">2</td>
-<td align="center">7</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">7</td>
 <td>yes</td>
 </tr>
 <tr>
-<td align="left">FE __</td>
-<td align="left">CP n</td>
+<td style="text-align: left;">FE __</td>
+<td style="text-align: left;">CP n</td>
 <td>A - n</td>
-<td align="center">2</td>
-<td align="center">7</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">7</td>
 <td>yes</td>
 </tr>
 <tr>
-<td align="left">76</td>
-<td align="left">HALT</td>
+<td style="text-align: left;">76</td>
+<td style="text-align: left;">HALT</td>
 <td>Wait 0.003 secs</td>
-<td align="center">1</td>
-<td align="center">4</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
 <td></td>
 </tr>
 </tbody>
@@ -328,78 +327,78 @@
 <table>
 <thead>
 <tr>
-<th align="left">Opcode</th>
-<th align="left">Instruction</th>
-<th align="left">Pseudocode</th>
-<th align="left">Flags Cond.</th>
-<th align="left">Description</th>
-<th align="center">Bytes</th>
+<th style="text-align: left;">Opcode</th>
+<th style="text-align: left;">Instruction</th>
+<th style="text-align: left;">Pseudocode</th>
+<th style="text-align: left;">Flags Cond.</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: center;">Bytes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">C3 <strong> </strong></td>
-<td align="left">JP ____</td>
-<td align="left"><code>PC = ____</code></td>
-<td align="left"></td>
-<td align="left">Jump Absolute (Big jump)</td>
-<td align="center">3</td>
+<td style="text-align: left;">C3 __ __</td>
+<td style="text-align: left;">JP ____</td>
+<td style="text-align: left;"><code>PC = ____</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Jump Absolute (Big jump)</td>
+<td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td align="left">18 __</td>
-<td align="left">JR __</td>
-<td align="left"><code>PC = PC + __</code></td>
-<td align="left"></td>
-<td align="left">Jump Relative (±128 jump)</td>
-<td align="center">2</td>
+<td style="text-align: left;">18 __</td>
+<td style="text-align: left;">JR __</td>
+<td style="text-align: left;"><code>PC = PC + __</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Jump Relative (±128 jump)</td>
+<td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td align="left">CD <strong> </strong></td>
-<td align="left">CALL ____</td>
-<td align="left"><code>push(PC+1); PC = ____</code></td>
-<td align="left"></td>
-<td align="left">Jump &amp; save next addr on stack</td>
-<td align="center">3</td>
+<td style="text-align: left;">CD __ __</td>
+<td style="text-align: left;">CALL ____</td>
+<td style="text-align: left;"><code>push(PC+1); PC = ____</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Jump &amp; save next addr on stack</td>
+<td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td align="left">C9</td>
-<td align="left">RET</td>
-<td align="left"><code>PC = pop()</code></td>
-<td align="left"></td>
-<td align="left">Jump back to last stack addr</td>
-<td align="center">1</td>
+<td style="text-align: left;">C9</td>
+<td style="text-align: left;">RET</td>
+<td style="text-align: left;"><code>PC = pop()</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Jump back to last stack addr</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td align="left">C8</td>
-<td align="left">RET Z</td>
-<td align="left"><code>if Z: PC = pop()</code></td>
-<td align="left">If Zero</td>
-<td align="left">Jump to last stack addr</td>
-<td align="center">1</td>
+<td style="text-align: left;">C8</td>
+<td style="text-align: left;">RET Z</td>
+<td style="text-align: left;"><code>if Z: PC = pop()</code></td>
+<td style="text-align: left;">If Zero</td>
+<td style="text-align: left;">Jump to last stack addr</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td align="left">C2 <strong> </strong></td>
-<td align="left">JP NZ ____</td>
-<td align="left"><code>if NZ: PC = ____</code></td>
-<td align="left">If Not Zero</td>
-<td align="left">Jump Absolute (Big jump)</td>
-<td align="center">3</td>
+<td style="text-align: left;">C2 __ __</td>
+<td style="text-align: left;">JP NZ ____</td>
+<td style="text-align: left;"><code>if NZ: PC = ____</code></td>
+<td style="text-align: left;">If Not Zero</td>
+<td style="text-align: left;">Jump Absolute (Big jump)</td>
+<td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td align="left">20 __</td>
-<td align="left">JR NZ, __</td>
-<td align="left"><code>if NZ: PC = PC + __</code></td>
-<td align="left">If Not Zero</td>
-<td align="left">Jump Relative (±128 jump)</td>
-<td align="center">2</td>
+<td style="text-align: left;">20 __</td>
+<td style="text-align: left;">JR NZ, __</td>
+<td style="text-align: left;"><code>if NZ: PC = PC + __</code></td>
+<td style="text-align: left;">If Not Zero</td>
+<td style="text-align: left;">Jump Relative (±128 jump)</td>
+<td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td align="left">C0</td>
-<td align="left">RET NZ</td>
-<td align="left"><code>if NZ: PC = pop()</code></td>
-<td align="left">If Not Zero</td>
-<td align="left">Jump to last stack addr</td>
-<td align="center">1</td>
+<td style="text-align: left;">C0</td>
+<td style="text-align: left;">RET NZ</td>
+<td style="text-align: left;"><code>if NZ: PC = pop()</code></td>
+<td style="text-align: left;">If Not Zero</td>
+<td style="text-align: left;">Jump to last stack addr</td>
+<td style="text-align: center;">1</td>
 </tr>
 </tbody>
 </table>
@@ -408,36 +407,36 @@
 <table>
 <thead>
 <tr>
-<th align="left">Opcode</th>
-<th align="left">Instruction</th>
+<th style="text-align: left;">Opcode</th>
+<th style="text-align: left;">Instruction</th>
 <th>Description</th>
-<th align="center">Bytes</th>
+<th style="text-align: center;">Bytes</th>
 <th>Number of cycles</th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">32 <strong> </strong></td>
-<td align="left">LD (ADR), A</td>
+<td style="text-align: left;">32 __ __</td>
+<td style="text-align: left;">LD (ADR), A</td>
 <td>*ADR = A</td>
-<td align="center">3</td>
+<td style="text-align: center;">3</td>
 <td></td>
 <td>Used for write video memory</td>
 </tr>
 <tr>
-<td align="left">22 <strong> </strong></td>
-<td align="left">LD (ADR), LH</td>
+<td style="text-align: left;">22 __ __</td>
+<td style="text-align: left;">LD (ADR), LH</td>
 <td>*ADR = LH</td>
-<td align="center">3</td>
+<td style="text-align: center;">3</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td align="left">36 __</td>
-<td align="left">LD (HL), n</td>
+<td style="text-align: left;">36 __</td>
+<td style="text-align: left;">LD (HL), n</td>
 <td>*LH = VALUE</td>
-<td align="center">2</td>
+<td style="text-align: center;">2</td>
 <td></td>
 <td></td>
 </tr>
@@ -484,14 +483,15 @@
     
   </span>
 </div>
-    <script>var base_url = '../../..';</script>
-    <script src="../../../js/theme_extra.js" defer></script>
-    <script src="../../../js/theme.js" defer></script>
-      <script src="../../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

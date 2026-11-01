@@ -8,7 +8,7 @@
     <title>TMUX - Documentación de Javi</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
@@ -17,12 +17,11 @@
         var mkdocs_page_url = null;
       </script>
     
-    <script src="../../js/jquery-3.6.0.min.js" defer></script>
     <!--[if lt IE 9]>
       <script src="../../js/html5shiv.min.js"></script>
     <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -34,7 +33,7 @@
           <a href="../.." class="icon icon-home"> Documentación de Javi
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -148,8 +147,8 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>TMUX</li>
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">TMUX</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -228,9 +227,13 @@ WantedBy=multi-user.target
 <p>Enable service with: <code>sudo systemctl enable tmux.service</code></p>
 <h2 id="learn-more">Learn more</h2>
 <ul>
+<li><a href="https://www.youtube.com/watch?v=nTqu6w2wc68">You need to learn tmux RIGHT NOW!</a></li>
+<li><a href="https://www.youtube.com/watch?v=DzNmUNvnB04">Tmux has forever changed the way I write code</a></li>
 <li>Video de s4vitar: <a href="https://www.youtube.com/watch?v=1dDahc214co">Aprendiendo a usar tmux desde 0</a></li>
 <li><a href="https://mutelight.org/practical-tmux">Practical Tmux</a></li>
 <li>https://hackernoon.com/using-tmux-to-improve-your-terminal-experience-jt4932zv</li>
+<li>https://protechnotes.com/comprehensive-tmux-tutorial-for-beginners-with-a-cheat-sheet/</li>
+<li>An alternative to TMUX: <a href="https://zellij.dev/">zellij</a></li>
 </ul>
               
             </div>
@@ -259,14 +262,15 @@ WantedBy=multi-user.target
     
   </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme_extra.js" defer></script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>

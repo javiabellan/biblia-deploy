@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>GPUs for DL - Documentación de Javi</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "GPUs for DL";
+        var mkdocs_page_input_path = "5_hardware/GPUs_for_DL.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Documentación de Javi
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/1_dirs.md">📁 Dirs (cd,ls,find,ranger)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/2_files.md">📄 Files (cat,file,stat)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/3_process.md">⏳ Process (ps,top)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/compression.md">🗜️ Compress (zip,tar,bz)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/cryptography.md">🔑 Cryptography (base64)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/plotting.md">📊 Plotting (gnuplot)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/scripting.md">👨‍💻 Scripting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/customization.md">🎨 Customization (dotfiles)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/git.md">GIT</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/editors.md">📝 Editors (nano,vim,jupyter)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/pacman.md">📦 Software (pacman,aur,pip)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/ssh.md">SSH</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/tmux.md">TMUX</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI data tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/free_text.md">⚪️ Free text (regex,grep,tr,sed)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/csv.md">🟢 Excel,csv,tsv (cut,paste,awk)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/html.md">🟡 HTML (pup) XML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/json.md">🟠 JSON (jq)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/pdf.md">🔴 PDF (Xpdf,poppler)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/image.md">🔵 Image (ImageMagick)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/sound_video.md">🟣 Sound,Video (ffmepg,sox)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI networking tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/web_scraping.md">⬇️ Web Scraping (curl,wget)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/pentesting.md">🗡️ Pentesting (nmap)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/deffensive.md">🛡️ Deffensive</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/dns.md">📒 DNS (dig,nslookup,whois)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/vpn.md">🔒 VPN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/firewall.md">📛 Firewall</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Python</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../python/numpy.md">🟦 Numpy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/machine_learning.md">🟫 Sklearn</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/pytorch.md">🟥 Pytorch</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/tensorflow.md">🟧 Tensorflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/onnx.md">⬜️ ONNX</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/tensorrt.md">🟩 TensorRT</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/numpy.md">🟦 Parallel</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">C++</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../programming/ruby.md">♦️ Ruby</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/monitoring.md">Monitoring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/profiling.md">Profiling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/debugging.md">Debugging</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/makefile.md">Makefile</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Documentación de Javi</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">GPUs for DL</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p><a href="https://en.wikipedia.org/wiki/List_of_Nvidia_graphics_processing_units">list of NVIDIA GPUs</a></p>
+<h1 align="center">Personal GPUs</h1>
+
+<h3 id="geforce-1000-series-pascal-2017">GeForce 1000 series (Pascal) (2017)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Card</th>
+<th style="text-align: right;">Cores</th>
+<th style="text-align: right;">Memory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">GT  1030</td>
+<td style="text-align: right;">384</td>
+<td style="text-align: right;">2GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1050</td>
+<td style="text-align: right;">640</td>
+<td style="text-align: right;">2GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1050</td>
+<td style="text-align: right;">768</td>
+<td style="text-align: right;">3GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1050ti</td>
+<td style="text-align: right;">768</td>
+<td style="text-align: right;">4GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1060</td>
+<td style="text-align: right;">1152</td>
+<td style="text-align: right;">3GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1060</td>
+<td style="text-align: right;">1280</td>
+<td style="text-align: right;">6GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1060ti</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1070</td>
+<td style="text-align: right;">1920</td>
+<td style="text-align: right;">8GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1070ti</td>
+<td style="text-align: right;">2432</td>
+<td style="text-align: right;">8GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1080</td>
+<td style="text-align: right;">2560</td>
+<td style="text-align: right;">8GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1080ti</td>
+<td style="text-align: right;">3584</td>
+<td style="text-align: right;">11GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX Titan X</td>
+<td style="text-align: right;">3584</td>
+<td style="text-align: right;">12GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX Titan Xp</td>
+<td style="text-align: right;">3840</td>
+<td style="text-align: right;">12GB GDDR5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="geforce-1600-series-turing-2019">GeForce 1600 series (Turing) (2019)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Card</th>
+<th style="text-align: right;">Cores</th>
+<th style="text-align: right;">Memory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">GTX 1650</td>
+<td style="text-align: right;">896</td>
+<td style="text-align: right;">4GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1660</td>
+<td style="text-align: right;">1408</td>
+<td style="text-align: right;">6GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">GTX 1660ti</td>
+<td style="text-align: right;">1536</td>
+<td style="text-align: right;">6GB GDDR6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="geforce-2000-series-turing-2018-2019">GeForce 2000 series (Turing) (2018, 2019)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Card</th>
+<th style="text-align: right;">Cores</th>
+<th style="text-align: right;">Tnsr C</th>
+<th style="text-align: right;">Memory</th>
+<th style="text-align: right;">Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">RTX 2060</td>
+<td style="text-align: right;">1920</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: right;">6GB GDDR6</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">RTX 2060 super</td>
+<td style="text-align: right;">2176</td>
+<td style="text-align: right;">272</td>
+<td style="text-align: right;">8GB GDDR6</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">RTX 2070</td>
+<td style="text-align: right;">2304</td>
+<td style="text-align: right;">288</td>
+<td style="text-align: right;">8GB GDDR6</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">RTX 2070 super</td>
+<td style="text-align: right;">2560</td>
+<td style="text-align: right;">320</td>
+<td style="text-align: right;">8GB GDDR6</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">RTX 2080</td>
+<td style="text-align: right;">2944</td>
+<td style="text-align: right;">368</td>
+<td style="text-align: right;">8GB GDDR6</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">RTX 2080 super</td>
+<td style="text-align: right;">3072</td>
+<td style="text-align: right;">384</td>
+<td style="text-align: right;">8GB GDDR6</td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">RTX 2080ti</td>
+<td style="text-align: right;">4352</td>
+<td style="text-align: right;">544</td>
+<td style="text-align: right;">11GB GDDR6</td>
+<td style="text-align: right;">1350€</td>
+</tr>
+<tr>
+<td style="text-align: left;">Titan RTX</td>
+<td style="text-align: right;">4608</td>
+<td style="text-align: right;">576</td>
+<td style="text-align: right;">24GB GDDR6</td>
+<td style="text-align: right;">2700€</td>
+</tr>
+</tbody>
+</table>
+<h3 id="volta-cards">Volta Cards</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Card</th>
+<th style="text-align: right;">Cores</th>
+<th style="text-align: right;">Tensor Cores</th>
+<th style="text-align: right;">Memory</th>
+<th style="text-align: right;">Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Titan V</td>
+<td style="text-align: right;">5120</td>
+<td style="text-align: right;">640</td>
+<td style="text-align: right;">12GB HBM2</td>
+<td style="text-align: right;">3000€</td>
+</tr>
+<tr>
+<td style="text-align: left;">Titan V CEO Ed.</td>
+<td style="text-align: right;">5120</td>
+<td style="text-align: right;">640</td>
+<td style="text-align: right;">32GB HBM2</td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 align="center">Scientific GPUs</h1>
+
+<h3 id="kepler-cards-2012">Kepler Cards (2012)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Card</th>
+<th style="text-align: right;">Cores</th>
+<th style="text-align: right;">Memory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">K10</td>
+<td style="text-align: right;">3072</td>
+<td style="text-align: right;">8GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">K20</td>
+<td style="text-align: right;">2496</td>
+<td style="text-align: right;">6GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">K40</td>
+<td style="text-align: right;">2880</td>
+<td style="text-align: right;">12GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">K80</td>
+<td style="text-align: right;">4992</td>
+<td style="text-align: right;">24GB GDDR5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pascal-cards-2016-2017">Pascal Cards (2016, 2017)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Card</th>
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Cores</th>
+<th style="text-align: right;">Memory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">P4</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">2560</td>
+<td style="text-align: right;">8GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">P40</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">3840</td>
+<td style="text-align: right;">24GB GDDR5</td>
+</tr>
+<tr>
+<td style="text-align: left;">P100</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">3584</td>
+<td style="text-align: right;">12GB  HBM2</td>
+</tr>
+<tr>
+<td style="text-align: left;">P100</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">3584</td>
+<td style="text-align: right;">16GB  HBM2</td>
+</tr>
+<tr>
+<td style="text-align: left;">P6</td>
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">2048</td>
+<td style="text-align: right;">16GB GDDR5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="turing-cards-2018">Turing Cards (2018)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Card</th>
+<th style="text-align: right;">Cores</th>
+<th style="text-align: right;">Memory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">T4</td>
+<td style="text-align: right;">2560</td>
+<td style="text-align: right;">16GB GDDR6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="volta-cards_1">Volta Cards</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Card</th>
+<th style="text-align: right;">Cores</th>
+<th style="text-align: right;">Tensor Cores</th>
+<th style="text-align: right;">Memory</th>
+<th style="text-align: right;">Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">TESLA V100</td>
+<td style="text-align: right;">5120</td>
+<td style="text-align: right;">640</td>
+<td style="text-align: right;">16GB HBM2</td>
+<td style="text-align: right;">6000$</td>
+</tr>
+<tr>
+<td style="text-align: left;">TESLA V100</td>
+<td style="text-align: right;">5120</td>
+<td style="text-align: right;">640</td>
+<td style="text-align: right;">32GB HBM2</td>
+<td style="text-align: right;">9000$</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 align="center">Rendering GPUs</h1>
+
+<h3 id="quadro-cards">QUADRO Cards</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Card</th>
+<th style="text-align: right;">Arq.</th>
+<th style="text-align: right;">Cores</th>
+<th style="text-align: right;">Memory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">RTX 6000</td>
+<td style="text-align: right;">Turing</td>
+<td style="text-align: right;">4608</td>
+<td style="text-align: right;">24GB GDDR6</td>
+</tr>
+<tr>
+<td style="text-align: left;">RTX 8000</td>
+<td style="text-align: right;">Turing</td>
+<td style="text-align: right;">4608</td>
+<td style="text-align: right;">48GB GDDR6</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

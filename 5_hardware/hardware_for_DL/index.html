@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Hardware - Documentación de Javi</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Hardware";
+        var mkdocs_page_input_path = "5_hardware/hardware_for_DL.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Documentación de Javi
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/1_dirs.md">📁 Dirs (cd,ls,find,ranger)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/2_files.md">📄 Files (cat,file,stat)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/3_process.md">⏳ Process (ps,top)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/compression.md">🗜️ Compress (zip,tar,bz)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/cryptography.md">🔑 Cryptography (base64)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/plotting.md">📊 Plotting (gnuplot)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/scripting.md">👨‍💻 Scripting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/customization.md">🎨 Customization (dotfiles)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/git.md">GIT</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/editors.md">📝 Editors (nano,vim,jupyter)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/pacman.md">📦 Software (pacman,aur,pip)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/ssh.md">SSH</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools/tmux.md">TMUX</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI data tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/free_text.md">⚪️ Free text (regex,grep,tr,sed)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/csv.md">🟢 Excel,csv,tsv (cut,paste,awk)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/html.md">🟡 HTML (pup) XML</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/json.md">🟠 JSON (jq)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/pdf.md">🔴 PDF (Xpdf,poppler)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/image.md">🔵 Image (ImageMagick)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_data/sound_video.md">🟣 Sound,Video (ffmepg,sox)</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">CLI networking tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/web_scraping.md">⬇️ Web Scraping (curl,wget)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/pentesting.md">🗡️ Pentesting (nmap)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/deffensive.md">🛡️ Deffensive</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/dns.md">📒 DNS (dig,nslookup,whois)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/vpn.md">🔒 VPN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../cli_tools_net/firewall.md">📛 Firewall</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Python</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../python/numpy.md">🟦 Numpy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/machine_learning.md">🟫 Sklearn</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/pytorch.md">🟥 Pytorch</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/tensorflow.md">🟧 Tensorflow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/onnx.md">⬜️ ONNX</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/tensorrt.md">🟩 TensorRT</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../python/numpy.md">🟦 Parallel</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">C++</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../programming/ruby.md">♦️ Ruby</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/monitoring.md">Monitoring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/profiling.md">Profiling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/debugging.md">Debugging</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../../programming/makefile.md">Makefile</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Documentación de Javi</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Hardware</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="hardware">Hardware</h1>
+<h3 id="gpu">GPU</h3>
+<p>Plenty of RAM and good single precision. Choose Nvidia.
+ * GTX 1080ti (12GB RAM) is the price performance sweet spot today
+ * GTX 1070 (8GB RAM) is also fine.
+ * Dual GPU let you continue to prototype (jupyter) whilst running an experiment (training).</p>
+<h3 id="cpu">CPU</h3>
+<ul>
+<li>i5 or i7 CPU is fine</li>
+<li><strong>Number of cores</strong>: The rule of thumb is to have two or more threads (or cores) per GPU in your system.</li>
+<li><strong>Speed</strong>: Important for computer vision and data augmentation.</li>
+<li><strong>Other purposes</strong>: Good CPUs are important for Gaming and VR/AR.</li>
+<li>Full 40 PCIe lanes and correct PCIe spec (same as your motherboard) ???</li>
+</ul>
+<h3 id="ram">RAM</h3>
+<ul>
+<li>As much RAM as possible.</li>
+<li>Note that you should really have more RAM than your total GPUs RAM</li>
+</ul>
+<h3 id="motherboard">Motherboard</h3>
+<ul>
+<li>Make sure it supports &gt;=64GB of RAM.</li>
+<li>Ensure you have x8 PCI lanes for each of your GPUs.</li>
+<li>For multiple GPUs:</li>
+<li>Several PCIe 3.0 slots (I think it should be x16e).</li>
+<li>Nvidia SLI support</li>
+</ul>
+<h3 id="storage">Storage</h3>
+<p>Fast drives (SSD or NVMe) for analysis, and big disks (HDD) for data
+ * NVMe drivers are amazing! Get the biggest you can afford
+ * Fill up the rest of space with the largest standard hard-drives you can buy.</p>
+<h3 id="power-supply">Power supply</h3>
+<ul>
+<li>Make sure your power supply is more than sufficient.</li>
+<li>Rule of thumb: GPUs + CPU + (100..300).</li>
+<li>GTX 1080 requires 180 W of power and recommended PSU is 500 W or greater.</li>
+<li>Since I plan on adding second card later (and just in case), I opted for 850 W power supply.</li>
+</ul>
+<blockquote>
+<h2 id="laptop">Laptop</h2>
+<p>If you are considering buying a laptop. I recommend you:
+* GPU: GTX1060 6GB or better
+* Storage: With SSD or NVMe</p>
+</blockquote>
+<h2 id="examples">Examples</h2>
+<h3 id="tight-budget">Tight budget</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Option</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU</td>
+<td>GTX 1070</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>i5 or AMD fx6300</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>8GB or 16GB</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Fast Storage</td>
+<td>SDD 128GB</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Data Storage</td>
+<td>HDD 1T</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Motherboard</td>
+<td>???</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Power supply</td>
+<td>???W</td>
+<td>???€</td>
+</tr>
+</tbody>
+</table>
+<h3 id="medium-budget">Medium budget</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Option</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU</td>
+<td>GTX 1080ti</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>i5 or i7</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>16GB or 32GB</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Fast Storage</td>
+<td>SDD or NVMe</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Data Storage</td>
+<td>HDD</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Motherboard</td>
+<td>???</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Power supply</td>
+<td>???W</td>
+<td>???€</td>
+</tr>
+</tbody>
+</table>
+<h3 id="high-budget">High budget</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Option</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU</td>
+<td>2x GTX 1080ti</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>i7</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>32GB or 64GB</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Fast Storage</td>
+<td>NVMe</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Data Storage</td>
+<td>HDD</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Motherboard</td>
+<td>???</td>
+<td>???€</td>
+</tr>
+<tr>
+<td>Power supply</td>
+<td>???W</td>
+<td>???€</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
